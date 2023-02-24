@@ -8,7 +8,6 @@ from openpyxl import load_workbook
 from openpyxl.drawing.image import Image
 import matplotlib.pyplot as plt
 import math as mt
-import datetime as date
 from datetime import datetime as dt
 from datetime import timedelta
 
@@ -18,7 +17,7 @@ hora = "{}:{}:{}".format(fAct.hour, fAct.minute, fAct.second)
 fecha = "{}/{}/{}".format(fAct.day, fAct.month, fAct.year)
 fecha_prod = "{}/{}/{}".format(f_prod.day, f_prod.month, f_prod.year)
 
-archivoExcel = xlsxwriter.Workbook('C:/~/test.xlsx')
+archivoExcel = xlsxwriter.Workbook('test.xlsx')
 hoja_3 = archivoExcel.add_worksheet('Encabezado')
 
 imagen = Image('logo.png')
